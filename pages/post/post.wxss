@@ -1,0 +1,48 @@
+/* pages/post/post.wxss */
+.novelInfo{
+width: 320px;
+height: 170px;
+}
+.novelInfo-top{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex
+}
+.novel-cover{
+  width: 75px;
+  height: 100px;
+}
+.novel-detail{
+  width: 200px;
+  height: 100px;
+margin-left: 10px;
+}
+.novel-button{
+  display: flex;
+
+}
+.novel-button button{
+width: 150px;
+height: 35px;
+
+}
+.novelBox{
+  text-align: left;
+  width: 320px;
+
+}
+.novelCover{
+  width: 75px;
+  height: 100px;
+}
+.novelTitle{
+  font-size:16px;
+}
+.novelAuthor{
+font-size:10px;
+color: #999999;
+}
+.novelSmall{
+  font-size:14px;
+}

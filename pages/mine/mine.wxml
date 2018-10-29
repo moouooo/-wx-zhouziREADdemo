@@ -1,0 +1,58 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view class='bg'></view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">Hi, {{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class='option-f'>
+    <view style=''>往期课程</view>
+    <view style="float:left;width: 1px;height: 15px; background: #777777;"></view>
+    <view>往期课程</view>
+  </view>
+
+
+  <view class=' section section-b' >
+    <text>消息通知</text>
+    <text>></text>
+  </view>
+
+    <view class=' section section-b' bindtap="makePhone" data-phone="{{phone}}">
+    <text>联系客服</text>
+    <text>></text>
+  </view>
+  <view class=' section section-b'>授权管理
+    <text>></text>
+  </view>
+  <view class=' section section-b'>切换账号
+    <text>></text>
+  </view>
+
+
+
+
+
+
+  <view class="usermotto">
+    <text class="user-motto">今天也要努力学习喵~</text>
+  </view>
+
+  <!-- 这是导航栏 -->
+  <view class="tabBar">
+    <block wx:for="{{tabBar}}" wx:for-item="item" wx:key="tabBar">
+      <view class="tabBar-item">
+        <navigator open-type="redirect" url="{{item.pagePath}}">
+          <view>
+            <image class="icon" src='{{item.iconPath}}'></image>
+          </view>
+          <view class="{{item.current== 1 ? 'tabBartext' :''}}">{{item.text}}</view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+  <!-- 导航栏结束 -->
+</view>

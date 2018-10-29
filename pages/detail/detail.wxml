@@ -1,0 +1,13 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<view>
+<view><text>标题</text></view>
+<view><text>作者</text></view>
+<view><text>内容</text></view>
+<view><text>回复数目</text> <text>节点</text></view>
+</view>
+<view>
+<view><text>用户名</text></view>
+<view><text>内容</text></view>
+
+</view>

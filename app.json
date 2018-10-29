@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/post/post",
+    "pages/detail/detail",
+    
+    "pages/mine/mine",
+    "pages/books/book"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "肘子阅读go!",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "color": "",
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabs/首页-0.png",
+        "selectedIconPath": "images/tabs/首页-1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/tabs/我的-0.png",
+        "selectedIconPath": "images/tabs/我的-1.png"
+      }
+    ],
+    "color": "#675042",
+    "selectedColor": "#FEAB66",
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#008262",
+    "borderStyle": {
+      "height": "100px"
+    }
+  }
+}

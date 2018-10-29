@@ -1,0 +1,32 @@
+<!--pages/post/post.wxml-->
+<view class='container-b'>
+  <view class='novelInfo'>
+
+    <view class='novelInfo-top'>
+      <view class='novel-cover'>
+        
+        <image src='{{novel.cover}}' class='novelCover'> </image>
+      </view>
+      <view class='novel-detail'>
+        <view class='novelTitle'>{{novel.title}}</view>
+        <view class='novelAuthor'>{{novel.author}}</view>
+        <view class='novelSmall'>{{novel.smallDetail}}</view>
+      </view>
+    </view>
+    <view class='novel-button'>
+    <button size='mini' class='miniButton'>立即阅读</button>
+    <button size='mini' class='miniButton'>加入收藏</button>
+    
+    </view>
+  </view>
+  <view class='novelBox'>
+    <view>
+      <text >作品介绍</text>
+    </view>
+    <view >
+      <text class='novelBig'>{{novel.bigDetail}}</text>
+    </view>
+
+  </view>
+
+</view>

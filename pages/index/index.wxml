@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class='container'>
+  <swiper class='index-swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+    <block wx:for="{{background}}" wx:key="lbt">
+      <swiper-item>
+        <image class='lunbotu' src='{{item.url}}'></image>
+        <view class="swiper-item {{item}}">
+
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+<view class='wui'>
+<view class='wui-v'><image src='/pic/分类.png' ></image><view class='wui-t'>分类</view></view>
+<view class='wui-v'><image src='/pic/排行.png' ></image><view class='wui-t'>排行</view></view>
+<view class='wui-v'><image src='/pic/书单.png' ></image><view class='wui-t'>书单</view></view>
+<view class='wui-v'><image src='/pic/更新.png' ></image><view class='wui-t'>更新</view></view>
+<view class='wui-v'><image src='/pic/征文.png' ></image><view class='wui-t'>征文</view></view>
+
+</view>
+
+    <view class="refresh-block" style="height: {{refreshHeigght}}px;" wx:if="{{refreshing}}">
+      <image animation="{{refreshAnimation}}" src="/images/加载.png"></image>
+    </view>
+
+  <view class="novelList">
+
+    <view class="novelItem" wx:for="{{novels}}" wx:key="index" >
+
+      <view>
+        <image src="{{item.cover}}" class='novelImage'></image>
+      </view>
+      <view class="novelInfo">
+        <view class="">
+          <text class='novelTitle'>{{item.title}}</text>
+        </view>
+        <view >
+          <text class='novelSmallDetail'>{{item.smallDetail}}</text>
+        </view>
+        <view class='author'>{{item.author}}</view>
+     <view class="action" >
+<navigator url="../post/post?id={{item._id}}" hover-class="none">详情</navigator>
+        </view>
+        
+      </view>
+    </view>
+  </view>
+
+</view>
